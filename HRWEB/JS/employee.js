@@ -19,10 +19,10 @@ fetch(Link).then(response=>{
         <td>${e.hire_date}</td>
         <td>${e.job_id}</td>
         <td>${e.salary}</td>
-        <td>${e.commision_pct}</td>
-        <td>${e.manger_id}</td>
+        <td>${e.commission_pct}</td>
+        <td>${e.manager_id}</td>
         <td>${e.department_id}</td>
-        `;
+    `;
         tbody.appendChild(row);
     })
 }).catch(err=>{
