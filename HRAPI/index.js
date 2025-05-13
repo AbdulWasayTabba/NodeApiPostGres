@@ -146,6 +146,16 @@ app.get('/totalregion', async (req, res) => {
 }
 );
 
+app.get('/totaljh', async (req, res) => {
+    try {
+        const result = await pool.query('select count(employee_id) from job_history');
+        res.json(result.rows);
+    } catch (err) {
+        res.status(500).json({ Error: err.message })
+    }
+}
+);
+
 
 
 

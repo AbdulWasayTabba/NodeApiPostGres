@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+
+<head>``
+    <title>Assignment Tables</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+    <style>
+        .table-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: flex-start;
+            padding: 20px;
+        }
+
+        .table-block {
+            flex: 1 1 500px;
+            max-width: 100%;
+        }
+
+        .table-block h5 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .table-responsive {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        table {
+            width: 100%;
+        }
+
+       
+table td {
+    border: 1px solid black;
+    background-color:lightgray !important ;
+}
+table th {
+    border: 1px solid black;
+    background-color:yellow !important ;
+}
+    </style>
+</head>
+
+<body>
+    <div class="container mt-4">
+        <a href="b_index.html" class="btn btn-primary mb-3">Go to Page 1</a>
+
+        <div class="table-container" >
+
+            <div class="table-block">
+                <h5>Employees Count</h5>
+                <div class="table-responsive">
+                    <table class="table table-primary" id="employeetable">
+                        <thead>
+                            <tr>
+                                <th>count</th>
+                            
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="table-block">
+                <h5>Countries Count</h5>
+                <div class="table-responsive">
+                    <table class="table table-primary" id="countrytable">
+                        <thead>
+                            <tr>
+                               <th>count</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="table-block">
+                <h5>Jobs Count</h5>
+                <div class="table-responsive">
+                    <table class="table table-primary" id="jobtable">
+                        <thead>
+                            <tr>
+                              <th>count</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="table-block">
+                <h5>Job History Count</h5>
+                <div class="table-responsive">
+                    <table class="table table-primary" id="job_historytable">
+                        <thead>
+                            <tr>
+                              <th>count</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="table-block">
+                <h5>Regions Count</h5>
+                <div class="table-responsive">
+                    <table class="table table-primary" id="regiontable">
+                        <thead>
+                            <tr>
+                                 <th>count</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="table-block">
+                <h5>Locations Count</h5>
+                <div class="table-responsive">
+                    <table class="table table-primary" id="locationtable">
+                        <thead>
+                            <tr>
+                               <th>count</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="table-block">
+                <h5>Departments Count</h5>
+                <div class="table-responsive">
+                    <table class="table table-primary" id="departmenttable">
+                        <thead>
+                            <tr>
+                                <th>count</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+  
+</body>
+
+</html>
+  <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+    <script src="JS/countemp.js"></script>
+    <script src="JS/countCountry.js"></script>
+    <script src="JS/countDep.js"></script>
+    <script src="JS/countJH.js"></script>
+    <script src="JS/countRegion.js"></script>
+    <script src="JS/countLoc.js"></script>
+    <script src="JS/countJob.js"></script>
