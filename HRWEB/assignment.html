@@ -2,159 +2,195 @@
 <html lang="en">
 
 <head>
-    <title>Title</title>
-    <!-- Required meta tags -->
+    <title>Assignment Tables</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <a href="b_index.html">Go to Page 1</a>
-    <!-- Bootstrap CSS v5.2.1 -->
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+    <style>
+        .table-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: flex-start;
+            padding: 20px;
+        }
+
+        .table-block {
+            flex: 1 1 500px;
+            max-width: 100%;
+        }
+
+        .table-block h5 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .table-responsive {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        table {
+            width: 100%;
+        }
+    </style>
 </head>
 
 <body>
-    
+    <div class="container mt-4">
+        <a href="b_index.html" class="btn btn-primary mb-3">Go to Page 1</a>
 
-    <div class="table-responsive">
-        <table class="table table-primary" id="employeetable">
-            <thead>
-                <tr>
-                    <th scope="col">employee_id</th>
-                    <th scope="col">first_name</th>
-                    <th scope="col">last_name</th>
-                    <th scope="col">email</th>
-                    <th scope="col">phone_number</th>
-                    <th scope="col">hire_date</th>
-                    <th scope="col">job_id</th>
-                    <th scope="col">salary</th>
-                    <th scope="col">commission_pct</th>
-                    <th scope="col">manager_id</th>
-                    <th scope="col">department_id</th>
-                </tr>
-            </thead>
-            <tbody>
-               
-            </tbody>
-        </table>
+        <div class="table-container">
+
+            <div class="table-block">
+                <h5>Employees</h5>
+                <div class="table-responsive">
+                    <table class="table table-primary" id="employeetable">
+                        <thead>
+                            <tr>
+                                <th>employee_id</th>
+                                <th>first_name</th>
+                                <th>last_name</th>
+                                <th>email</th>
+                                <th>phone_number</th>
+                                <th>hire_date</th>
+                                <th>job_id</th>
+                                <th>salary</th>
+                                <th>commission_pct</th>
+                                <th>manager_id</th>
+                                <th>department_id</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="table-block">
+                <h5>Countries</h5>
+                <div class="table-responsive">
+                    <table class="table table-primary" id="countrytable">
+                        <thead>
+                            <tr>
+                                <th>COUNTRY ID</th>
+                                <th>COUNTRY NAME</th>
+                                <th>REGION ID</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="table-block">
+                <h5>Jobs</h5>
+                <div class="table-responsive">
+                    <table class="table table-primary" id="jobtable">
+                        <thead>
+                            <tr>
+                                <th>JOB ID</th>
+                                <th>JOB TITLE</th>
+                                <th>MAX SALARY</th>
+                                <th>MIN SALARY</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="table-block">
+                <h5>Job History</h5>
+                <div class="table-responsive">
+                    <table class="table table-primary" id="job_historytable">
+                        <thead>
+                            <tr>
+                                <th>employee_id</th>
+                                <th>START DATE</th>
+                                <th>END DATE</th>
+                                <th>JOB_ID</th>
+                                <th>DEPARTMENT ID</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="table-block">
+                <h5>Regions</h5>
+                <div class="table-responsive">
+                    <table class="table table-primary" id="regiontable">
+                        <thead>
+                            <tr>
+                                <th>REGION ID</th>
+                                <th>REGION NAME</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="table-block">
+                <h5>Locations</h5>
+                <div class="table-responsive">
+                    <table class="table table-primary" id="locationtable">
+                        <thead>
+                            <tr>
+                                <th>LOCATION ID</th>
+                                <th>STREET ADDRESS</th>
+                                <th>POSTAL CODE</th>
+                                <th>CITY</th>
+                                <th>STATE PROVINCE</th>
+                                <th>COUNTRY ID</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="table-block">
+                <h5>Departments</h5>
+                <div class="table-responsive">
+                    <table class="table table-primary" id="departmenttable">
+                        <thead>
+                            <tr>
+                                <th>DEPARTMENT ID</th>
+                                <th>DEPARTMENT NAME</th>
+                                <th>MANAGER ID</th>
+                                <th>LOCATION ID</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
     </div>
 
-       <div class="table-responsive">
-        <table class="table table-primary" id="countrytable">
-            <thead>
-                <tr>
-                    <th scope="col">COUNTRY ID</th>
-                    <th scope="col">COUNTRY NAME</th>
-                    <th scope="col">REGION ID</th>
-                </tr>
-            </thead>
-            <tbody>
-               
-            </tbody>
-        </table>
-    </div>
-
-         <div class="table-responsive">
-        <table class="table table-primary" id="jobtable">
-            <thead>
-                <tr>
-                    <th scope="col">JOB ID</th>
-                    <th scope="col">JOB TITLE</th>
-                    <th scope="col">MAX SALARY</th>
-                    <th scope="col">MIN SALARY </th>
-                </tr>
-            </thead>
-            <tbody>
-               
-            </tbody>
-        </table>
-    </div>
-
-       <div class="table-responsive">
-        <table class="table table-primary" id="job_historytable">
-            <thead>
-                <tr>
-                    <th scope="col">employee_id</th>
-                    <th scope="col">START DATE</th>
-                    <th scope="col">END DATE</th>
-                    <th scope="col">JOB_ID</th>
-                    <th scope="col">DEPARTMENT ID </th>
-                </tr>
-            </thead>
-            <tbody>
-               
-            </tbody>
-        </table>
-    </div>
-
-       <div class="table-responsive">
-        <table class="table table-primary" id="regiontable">
-            <thead>
-                <tr>
-                    <th scope="col">REGION ID</th>
-                    <th scope="col">REGION NAME</th>
-                </tr>
-            </thead>
-            <tbody>
-               
-            </tbody>
-        </table>
-    </div>
-
-       <div class="table-responsive">
-        <table class="table table-primary" id="locationtable">
-            <thead>
-                <tr>
-                    <th scope="col">LOCATION ID</th>
-                    <th scope="col">STREET ADDRESS</th>
-                    <th scope="col">POSTAL CODE</th>
-                    <th scope="col">CITY </th>
-                    <th scope="col">STATE PROVINCE </th>
-                    <th scope="col">COUNTRY ID </th>
-                </tr>
-            </thead>
-            <tbody>
-               
-            </tbody>
-        </table>
-    </div>
-
-       <div class="table-responsive">
-        <table class="table table-primary" id="departmenttable">
-            <thead>
-                <tr>
-                    <th scope="col">DEPARTMENT ID</th>
-                    <th scope="col">DEPARTMENT NAME</th>
-                    <th scope="col">MANAGER ID</th>
-                    <th scope="col">LOCATION ID </th>
-                </tr>
-            </thead>
-            <tbody>
-               
-            </tbody>
-        </table>
-    </div>
-
-
+  
 </body>
 
 </html>
+  <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
 
-<script
-src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-crossorigin="anonymous"
-></script>
-
-<script
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-crossorigin="anonymous"
-></script>
     <script src="JS/employee.js"></script>
     <script src="JS/country.js"></script>
-<script src="JS/job.js"></script>
-<script src="JS/job_history.js"></script>
-<script src="JS/region.js"></script>
-<script src="JS/location.js"></script>
-<script src="JS/department.js"></script>
+    <script src="JS/job.js"></script>
+    <script src="JS/job_history.js"></script>
+    <script src="JS/region.js"></script>
+    <script src="JS/location.js"></script>
+    <script src="JS/department.js"></script>

@@ -1,6 +1,6 @@
-const Link ="https://reimagined-carnival-pj947jqj6rjx26xrp-5005.app.github.dev/job"
+const jobLink ="https://reimagined-carnival-pj947jqj6rjx26xrp-5005.app.github.dev/job"
 
-fetch(Link).then(response=>{
+fetch(jobLink).then(response=>{
     if(!response.ok){
         throw new Error("Failed to Fetch Data");
     }
@@ -14,7 +14,7 @@ fetch(Link).then(response=>{
         <td>${j.job_id}</td>
         <td>${j.job_title}</td>
         <td>${j.min_salary}</td>
-        <td>${jh.max_salary}</td>
+        <td>${j.max_salary}</td>
       
       
      

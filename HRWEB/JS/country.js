@@ -1,6 +1,6 @@
-const Link ="https://reimagined-carnival-pj947jqj6rjx26xrp-5005.app.github.dev/countries"
+const coLink ="https://reimagined-carnival-pj947jqj6rjx26xrp-5005.app.github.dev/countries"
 
-fetch(Link).then(response=>{
+fetch(coLink).then(response=>{
     if(!response.ok){
         throw new Error("Failed to Fetch Data");
     }

@@ -1,6 +1,6 @@
-const Link ="https://reimagined-carnival-pj947jqj6rjx26xrp-5005.app.github.dev/department"
+const depLink ="https://reimagined-carnival-pj947jqj6rjx26xrp-5005.app.github.dev/department"
 
-fetch(Link).then(response=>{
+fetch(depLink).then(response=>{
     if(!response.ok){
         throw new Error("Failed to Fetch Data");
     }

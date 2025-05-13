@@ -1,6 +1,6 @@
-const Link ="https://reimagined-carnival-pj947jqj6rjx26xrp-5005.app.github.dev/job_history"
+const jhLink ="https://reimagined-carnival-pj947jqj6rjx26xrp-5005.app.github.dev/job_history"
 
-fetch(Link).then(response=>{
+fetch(jhLink).then(response=>{
     if(!response.ok){
         throw new Error("Failed to Fetch Data");
     }
